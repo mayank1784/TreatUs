@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Menu</title>
+  <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+</head>
+<body>
+  <section id="vendor-section">
+    <h2><%= vendor.name %></h2>
+    <h2><%= vendor.stallName %></h2>
+    <button id="location-button">Location</button>
+    <div id="map-iframe"></div>
+  </section>
+
+  <section id="menu-section">
+    <% for (let i = 0; i < vendor.menu.length; i++) { %>
+      <div class="menu-item">
+        <div class="dish-details">
+          <h3><%= vendor.menu[i].name %></h3>
+          <p><%= vendor.menu[i].description %></p>
+        </div>
+        <div class="dish-info">
+          <p class="dish-price">$<%= vendor.menu[i].price %></p>
+          <img src="<%= vendor.menu[i].image %>" alt="<%= vendor.menu[i].name %>">
+          <button class="delete-button">Delete</button>
+        </div>
+      </div>
+    <% } %>
+
+    <div id="add-item" class="menu-item">
+      <button id="add-button">Add Item</button>
+    </div>
+  </section>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>

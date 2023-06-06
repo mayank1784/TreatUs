@@ -1,0 +1,96 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+  
+  #vendor-section {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #vendor-section h2 {
+    color: #333333;
+    margin: 0;
+  }
+  
+  #location-button {
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #location-button:hover {
+    background-color: #006080;
+  }
+  
+  #menu-section {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dish-details h3 {
+    color: #333333;
+    margin: 0;
+  }
+  
+  .dish-details p {
+    color: #666666;
+    margin: 0;
+  }
+  
+  .dish-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dish-price {
+    color: #333333;
+    margin-right: 10px;
+  }
+  
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+  
+  .delete-button {
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #006080;
+  }
+  
+  #add-button {
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #add-button:hover {
+    background-color: #006080;
+  }
+  

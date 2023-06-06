@@ -1,0 +1,167 @@
+body {
+    background-image: url('https://manilastandard.net/wp-content/uploads/2022/11/hilton_manila2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }
+  
+  section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #vendor-info {
+    text-align: center;
+  }
+  
+  #vendor-info h1 {
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  #location-button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #location-button:hover {
+    background-color: #45a049;
+  }
+  
+  #menu {
+    text-align: center;
+  }
+  
+  #menu h2 {
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  #menu-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #menu-controls {
+    margin-top: 20px;
+  }
+  
+  #new-item-input {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  #add-button,
+  #delete-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #add-button:hover,
+  #delete-button:hover {
+    background-color: #006080;
+  }
+  /*user page*/
+  body {
+    background: linear-gradient(to bottom, #f1f1f1, #d9d9d9);
+    font-family: Arial, sans-serif;
+  }
+  
+  section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h1, h2 {
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #profile-image {
+    background-color: #cccccc;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  #search-section {
+    text-align: center;
+  }
+  
+  #search-box {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #vendor-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vendor-profile-image {
+    background-color: #cccccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .vendor-info {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #profile-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #profile-button:hover {
+    background-color: #006080;
+  }

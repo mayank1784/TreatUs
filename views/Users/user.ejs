@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" type="text/css" href="/assets/userstyles.css">
+</head>
+<body>
+  <section id="user-profile">
+    <div id="user-info">
+      <h1><%= customer.name %></h1>
+      <div id="profile-image"></div>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsum impedit, ipsam ullam vero quam corporis illo tenetur facere harum ipsa excepturi. Nam numquam facere consequuntur qui illum aspernatur voluptates!</p>
+    </div>
+    
+    <button id="location-button">Location</button>
+  </section>
+  <h3 id="location-heading"></h3>
+
+  <section id="search-section">
+    <input type="text" id="search-box" placeholder="Search Vendors">
+  </section>
+
+  <section id="vendor-cards">
+    <% vendors.forEach(function(vendor) { %>
+      <div class="card">
+        <div class="vendor-info">
+          <h2><%= vendor.stallName %></h2>
+          <div class="vendor-profile-image"></div>
+        </div>
+        <ul class="menu-list">
+          <% vendor.menu.forEach(function(item) { %>
+            <li><%= item.name %></li>
+          <% }); %>
+        </ul>
+        <a href="https://www.google.com/maps/search/?api=1&query=<%= vendor.latitude %>,<%= vendor.longitude %>" target="_blank">
+          <button class="profile-button">Go to Location</button>
+        </a>
+      </div>
+    <% }); %>
+  </section>
+
+  
+
+  <script src="/assets/userscript.js"></script>
+</body>
+</html>
