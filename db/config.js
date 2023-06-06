@@ -1,7 +1,7 @@
-require("dotenv").config({path:'../.env'});
+require("dotenv").config();
 const mongoose = require("mongoose");
 mongoose                                                    //Database Connection
-  .connect("mongodb+srv://mayankjain1784:gdsc123@cluster0.gzr4giu.mongodb.net/treatus", {
+  .connect(process.env.MONGO_CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     bufferCommands: false,
@@ -14,4 +14,4 @@ mongoose                                                    //Database Connectio
   db.on("error", console.error.bind(console, "connection error:"));
   db.on("connected", () => console.log("Database connected!"));
 
-module.exports = {db};
+module.exports = db;
